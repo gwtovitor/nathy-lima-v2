@@ -1,0 +1,42 @@
+.divisor {
+    background-color: var(--color-primary);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    .hiden {
+        opacity: 0;
+    }
+
+    .show {
+        opacity: 1;
+        animation: var(--anim-fade-in-left);
+    }
+
+    .show2 {
+        opacity: 1;
+        animation: var(--anim-fade-in-right);
+    }
+
+    .bodyText {
+        font-family: var(--font-primary);
+        color: white;
+        font-style: italic;
+    }
+
+    img {
+        height: 50%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .divisor {
+        height: 150px;
+        .bodyText{
+            font-size: 4rem;
+        }
+    }
+}

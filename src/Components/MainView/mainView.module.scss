@@ -1,0 +1,78 @@
+.mainView {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	.backDrop {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.726);
+		position: absolute;
+		z-index: 2;
+	}
+
+	.backgroundVideo {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		object-fit: cover;
+		z-index: 1;
+	}
+
+	.wrapperInfo {
+		position: absolute;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		animation: var(--anim-fade-bottom);
+
+		.logo {
+			width: 60%;
+		}
+
+		.youtubeBtn {
+			display: flex;
+			background-color: rgb(216, 47, 47);
+			// background-color: rgb(255, 255, 255);
+			border-radius: 5rem;
+			align-items: center;
+			padding: 0.3rem 1rem;
+			gap: 1rem;
+
+			span {
+				text-wrap: nowrap;
+				color: white;
+			}
+
+			img {
+				height: 30px;
+				width: auto;
+			}
+		}
+
+		span {
+			width: 60%;
+			text-align: center;
+			color: white;
+			margin: 0;
+			font-family: var(--font-primary);
+			font-weight: bold;
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	.mainView {
+		.wrapperInfo {
+			.logo {
+				width: 30%;
+			}
+
+		}
+	}
+}
