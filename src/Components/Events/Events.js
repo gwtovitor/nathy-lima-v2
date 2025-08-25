@@ -84,8 +84,8 @@ function Event({ event, index }) {
 				<div className={styles.month}>{getDateStr(event.date)}</div>
 			</div>
 			<div className={styles.eventInfo}>
-				<h3 className={styles.eventName}>Casa do Gaucho</h3>
-				<span className={styles.adress}>Recife-PE</span>
+				<h3 className={styles.eventName}>{event.eventName}</h3>
+				<span className={styles.adress}>{event.adress}</span>
 			</div>
 		</div>
 	);
