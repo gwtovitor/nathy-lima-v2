@@ -12,7 +12,7 @@ export default function History() {
 		<div className={styles.history}>
 			<span
 				ref={refText}
-				className={`${styles.hiden} ${showText ? styles.show : ''} ${
+				className={`${
 					styles.text1
 				}`}
 			>
