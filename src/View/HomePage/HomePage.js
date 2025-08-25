@@ -27,18 +27,19 @@ export default function HomePage() {
 		<div className={styles.homePage}>
 			<Navbar onGo={scrollTo} />
 			<MainView />
-			<Divisor bodyText="Nathy Lima" />
-			<section ref={refs.history}>
-				<History />
-			</section>
+
 			<Divisor bodyText="Agenda" />
-			<section ref={refs.events} >
+			<section ref={refs.events}>
 				<Events />
 			</section>
 			<Divisor bodyText="Escute Agora !" />
 
 			<section ref={refs.listenNow}>
 				<ListenNow />
+			</section>
+			<Divisor bodyText="Nathy Lima" />
+			<section ref={refs.history}>
+				<History />
 			</section>
 			<Divisor bodyText="Contato" />
 
