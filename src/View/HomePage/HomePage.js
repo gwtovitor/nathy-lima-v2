@@ -32,7 +32,7 @@ export default function HomePage() {
 			<section ref={refs.events}>
 				<Events />
 			</section>
-			<Divisor bodyText="Escute Agora !" />
+			<Divisor bodyText="Ouça !" />
 
 			<section ref={refs.listenNow}>
 				<ListenNow />
