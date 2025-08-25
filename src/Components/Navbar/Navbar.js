@@ -91,16 +91,16 @@ const Nav = ({ onGo }) => {
 const NavLinks = ({ go }) => {
 	return (
 		<>
-			<div className={styles.navItem} onClick={() => go('galeria')}>
-				Galeria
-			</div>
-			<div className={styles.navItem} onClick={() => go('oucaAgora')}>
-				Ouça agora !
-			</div>
-			<div className={styles.navItem} onClick={() => go('historia')}>
+			<div className={styles.navItem} onClick={() => go('history')}>
 				História
 			</div>
-			<div className={styles.navItem} onClick={() => go('contato')}>
+			<div className={styles.navItem} onClick={() => go('events')}>
+				Agenda
+			</div>
+			<div className={styles.navItem} onClick={() => go('listenNow')}>
+				Ouça Agora
+			</div>
+			<div className={styles.navItem} onClick={() => go('contact')}>
 				Contato
 			</div>
 		</>

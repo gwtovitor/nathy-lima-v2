@@ -1,0 +1,53 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 4rem);
+    background-color: var(--color-dark);
+    padding: 2rem;
+    gap: 1rem;
+    .btn {
+        padding: 0.5rem 1.5rem;
+        width: 60%;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        cursor: pointer;
+        svg {
+            height: 30px;
+            width: 30px;
+            fill: white;
+        }
+
+        span {
+            font-family: var(--font-primary);
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+
+    .whatsapp {
+        background-color: #075e54;
+
+    }
+
+    .instagram {
+        background-color: #C13584;
+    }
+    .youtube{
+        background-color: #cc181e;
+    }
+   
+}
+@media (min-width: 1280px) {
+    .contact {
+
+    .btn {
+        width: 25%;
+    }
+}
+}

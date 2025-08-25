@@ -1,0 +1,37 @@
+ .createEvent {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+
+     .wrapperInput {
+         display: flex;
+         flex-direction: column;
+         color: white;
+         gap: 0.3rem;
+         font-family: var(--font-secundary);
+
+         input {
+             padding: .5rem 1rem;
+             border-radius: 1rem;
+             border: none;
+         }
+
+     }
+
+     button {
+         padding: 0.5rem 1rem;
+         border-radius: 1rem;
+         background-color: var(--color-primary);
+         border: none;
+         cursor: pointer;
+     }
+ }
+
+ @media (min-width: 1280px) {
+
+
+     .createEvent {
+         width: 50%;
+     }
+
+ }

@@ -1,0 +1,19 @@
+.footer{
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    font-family: var(--font-primary);
+    gap: 0.5rem;
+    .gwto{
+        display: flex;
+        gap: 0.4rem;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}

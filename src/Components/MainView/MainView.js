@@ -2,6 +2,7 @@ import styles from './mainView.module.scss';
 import bgVideo from '../../assets/bg_video.mp4';
 import poster from '../../assets/video_poster.jpg';
 import logo2 from '../../assets/logo2.png';
+import openInNewTab from '../../Services/openInNewTab'
 
 export default function MainView() {
 	//https://www.youtube.com/watch?v=jpPmC6BB5Jo
@@ -19,7 +20,7 @@ export default function MainView() {
 			<div className={styles.wrapperInfo}>
 				<img className={styles.logo} src={logo2} />
 				<span>Ouça agora leite derramado</span>
-				<div className={styles.youtubeBtn}>
+				<div onClick={()=>openInNewTab("https://www.youtube.com/watch?v=jpPmC6BB5Jo")} className={styles.youtubeBtn}>
                     <img src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png" alt="youtube-play"/>
                     <span>OUÇA NO YOUTUBE!</span>
                 </div>

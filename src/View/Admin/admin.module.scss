@@ -1,0 +1,15 @@
+.admin {
+    width: calc(100% - 4rem);
+    background-color: var(--color-dark);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+@media (min-width: 1280px) {
+
+    .admin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
