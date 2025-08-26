@@ -7,47 +7,63 @@
     background-color: var(--color-dark);
     padding: 2rem;
     gap: 1rem;
+
     .btn {
         padding: 0.5rem 1.5rem;
         width: 60%;
         border-radius: 2rem;
         display: flex;
         justify-content: center;
-        gap: 1rem;
         align-items: center;
         cursor: pointer;
-        svg {
-            height: 20px;
-            width: 20px;
-            fill: white;
+
+        .wrapperItems {
+            display: flex;
+            width: 70%;
+            // margin-left: 1rem;
+            gap: 1rem;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                fill: white;
+            }
+
+            span {
+                font-family: var(--font-primary);
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+            }
         }
 
-        span {
-            font-family: var(--font-primary);
-            color: white;
-            font-size: 1rem;
-            font-weight: bold;
-        }
+
     }
 
     .whatsapp {
-        background-color: #075e54;
+        background-color: #0d920d;
 
     }
 
     .instagram {
-        background-color: #C13584;
+        background-color: #e91f95;
     }
-    .youtube{
-        background-color: #cc181e;
+
+    .youtube {
+        background-color: #f50b12;
     }
-   
+
 }
+
 @media (min-width: 1280px) {
     .contact {
 
-    .btn {
-        width: 25%;
+        .btn {
+            width: 15%;
+
+            .wrapperItems {
+                width: 50%;
+            }
+        }
     }
-}
 }
