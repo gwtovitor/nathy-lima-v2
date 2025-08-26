@@ -11,10 +11,11 @@ import Footer from '../../Components/Footer/Footer';
 
 export default function HomePage() {
 	const refs = {
+		home: useRef(null),
 		events: useRef(null),
 		listenNow: useRef(null),
 		history: useRef(null),
-		contact: useRef(null),
+		contact: useRef(null)
 	};
 
 	const scrollTo = useCallback((key) => {
@@ -26,7 +27,7 @@ export default function HomePage() {
 	return (
 		<div className={styles.homePage}>
 			<Navbar onGo={scrollTo} />
-			<MainView />
+			<MainView ref={refs.home}/>
 
 			<Divisor bodyText="Agenda" />
 			<section ref={refs.events}>

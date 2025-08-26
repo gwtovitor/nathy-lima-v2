@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import styles from './history.module.scss';
 import image from '../../assets/nathy.jpg';
+import image3 from '../../assets/nathy3.jpg';
+import image4 from '../../assets/nathy4.jpg';
 import { useRevealOnScroll } from '../../Hooks/useRevealOnScrool';
 export default function History() {
 	const [showImg, refImg] = useRevealOnScroll({ once: true });
@@ -36,7 +38,7 @@ export default function History() {
 						showImgLeft ? styles.showLeft : ''
 					} ${styles.imageSecondary}`}
 					ref={refImgLeft}
-					src={image}
+					src={image3}
 				/>
 				<img
 					className={`${styles.hiden} ${showImg ? styles.show : ''} ${
@@ -50,7 +52,7 @@ export default function History() {
 						showImgRight ? styles.showRight : ''
 					} ${styles.imageSecondary}`}
 					ref={refImgRigth}
-					src={image}
+					src={image4}
 				/>
 			</div>
 		</div>
